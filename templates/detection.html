@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social distance Detection</title>
+
+    <!-- Plugins CSS -->
+	<link rel="stylesheet" href="../static/assets/plugins/css/plugins.css">	
+    
+    <!-- Custom style -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+	<link href="../static/assets/css/responsiveness.css" rel="stylesheet"><link id="jssDefault" rel="stylesheet" href="../static/assets/css/skins/default.css">
+    
+	</head>
+	
+	<body>
+		
+		<!-- ======================= Start Navigation ===================== -->
+		<nav class="navbar navbar-default navbar-mobile navbar-fixed light bootsnav">
+			<div class="container">
+			
+				<!-- Start Logo Header Navigation -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index-2.html">
+						<img src="../static/assets/img/logo.png" class="logo logo-display" alt="">
+						<img src="../static/assets/img/logo.png" class="logo logo-scrolled" alt="">
+					</a>
+
+				</div>
+				<!-- End Logo Header Navigation -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+				
+					<ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+					
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/about">About</a>
+						</li>
+						<li>
+							<a href="/detection">Social Distance detection</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
+						</li>
+						
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li class="sign-up"><a class="btn-signup red-btn" href="/detection">Detection</a></li> 
+					</ul>
+						
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>   
+		</nav>
+		<!-- ======================= End Navigation ===================== -->
+		
+		<!-- ======================= Start Page Title ===================== -->
+		<div class="page-title image-title" style="background-image:url(../static/assets/img/banner.jpg);">
+			<div class="container">
+				<div class="page-title-wrap">
+				<h2>Social Distance Detection</h2>
+				<p><a href="#" class="theme-cl">Home</a> | <span>Say Hello</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- ======================= End Page Title ===================== -->
+		
+		<!-- =========== Start All Hotel In Grid View =================== -->
+		<section class="gray-bg">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="form-box">
+							<div class="c-detail">
+								<!-- <strong>Select Video</strong> -->
+								<form method="POST" action="/detection" enctype="multipart/form-data">
+									<div class="col-sm-9">
+										<label>Select Video<sup class="cl-danger">*</sup></label>
+										<input type="file" id="upload" name="upload" class="form-control">
+									</div>
+									<div>
+										<div class="col-sm-6">
+											<button type="submit" class="btn theme-btn ">Submit Request</button>
+										</div>
+									</div>
+									
+								</form>
+								
+							</div>
+						</div>
+						<a href="/detectioncam" class="text-center"><p>Start sream by your camera</p></a>
+					</div>
+					
+					<div class="col-md-9 col-sm-9">
+						<div class="form-box">
+							<img src="{{ url_for('video', filename=filename) }}" alt="" style="max-width: 868px; width: 868px;">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- =========== End All Hotel In Grid View =================== -->
+			
+
+		<!-- ================= footer start ========================= -->
+		<footer class="footer dark-bg">
+			<div class="container">
+				
+				<!-- Row Start -->
+				<div class="row">
+				
+					<div class="col-md-8 col-sm-8">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Pages</h4>
+								<ul>
+									<li><a href="/">Home Page</a></li>
+									<li><a href="/about">About page</a></li>
+
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Pages</h4>
+								<ul>
+									<li><a href="/contact">Contact Page</a></li>
+									<li><a href="/detection">Detecton page</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Pages</h4>
+								<ul>
+									<li><a href="/contact">Contact Page</a></li>
+									<li><a href="/detection">Detecton page</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-4">
+						<h4>Subscribe Now</h4>
+						<!-- Newsletter -->
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter Email">
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
+							</span>
+						</div>
+						
+						<!-- Social Box -->
+						<div class="f-social-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest pinterest-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+		
+
+		<!-- /Switcher -->
+		 
+		<!-- =================== START JAVASCRIPT ================== -->
+		<!-- <script src="../static/assets/plugins/js/jquery.min.js"></script>
+		<script src="../static/assets/plugins/js/bootstrap.min.js"></script>
+		<script src="../static/assets/plugins/js/viewportchecker.js"></script>
+		<script src="../static/assets/plugins/js/bootsnav.js"></script>
+		<script src="../static/assets/plugins/js/slick.min.js"></script>
+		<script src="../static/assets/plugins/js/jquery.nice-select.min.js"></script>
+		<script src="../static/assets/plugins/js/jquery.fancybox.min.js"></script>
+		<script src="../static/assets/plugins/js/jquery.downCount.js"></script>
+		<script src="../static/assets/plugins/js/freshslider.1.0.0.js"></script>
+		<script src="../static/assets/plugins/js/moment.min.js"></script>
+		<script src="../static/assets/plugins/js/daterangepicker.js"></script>
+		<script src="../static/assets/plugins/js/wysihtml5-0.3.0.js"></script>
+		<script src="../static/assets/plugins/js/bootstrap-wysihtml5.js"></script> -->
+		
+		<!-- Dashboard Js -->
+		<!-- <script src="../static/assets/plugins/js/jquery.slimscroll.min.js"></script>
+		<script src="../static/assets/plugins/js/jquery.metisMenu.js"></script>
+		<script src="../static/assets/plugins/js/jquery.easing.min.js"></script> -->
+ 
+		<!-- Custom Js -->
+		
+	
+    </body>
+
+</html>
