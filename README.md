@@ -41,9 +41,9 @@ python app.py
 ```
 ## Home Proejct
 
-![Test Image 1](https://github.com/codejay411/House-price-prediction-boston/blob/main/Screenshot%20(118).png)
+![Test Image 1](https://github.com/codejay411/codejay-project/blob/main/Screenshot%20(118).png)
 
 ## Detetcion page
 
-![Test Image 1](https://github.com/codejay411/House-price-prediction-boston/blob/main/Screenshot%20(119).png)
+![Test Image 1](https://github.com/codejay411/codejay-project/blob/main/Screenshot%20(119).png)
 
